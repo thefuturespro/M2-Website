@@ -83,9 +83,16 @@ body {
 }
 
 .brand-logo {
-  height: 36px;
+  height: 30px;
   width: auto;
   display: block;
+  max-width: 180px;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.brand {
+  min-width: 0;
 }
 
 .menu-toggle {
@@ -230,15 +237,17 @@ h3 {
   border-radius: 12px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
   padding: 0.65rem;
-  min-height: 235px;
+  aspect-ratio: 16 / 9;
+  min-height: 0;
+  max-height: 360px;
   overflow: hidden;
 }
 
 .live-image {
   width: 100%;
   height: 100%;
-  min-height: 220px;
   object-fit: cover;
+  object-position: center;
   border-radius: 8px;
   display: block;
 }
@@ -446,6 +455,11 @@ h3 {
 
   h1 {
     font-size: clamp(1.7rem, 8vw, 2.3rem);
+  }
+
+  .brand-logo {
+    height: 24px;
+    max-width: 145px;
   }
 
   .footer-row {
