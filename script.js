@@ -1,17 +1,14 @@
-const revealTargets = document.querySelectorAll('.reveal-on-scroll');
+const nodes = document.querySelectorAll('.reveal-up');
 
-if (revealTargets.length > 0) {
-  const observer = new IntersectionObserver((entries) => {
+if (nodes.length) {
+  const observer = new IntersectionObserver((entries, obs) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
+        obs.unobserve(entry.target);
       }
     });
-  }, {
-    threshold: 0.16,
-    rootMargin: '0px 0px -40px 0px'
-  });
+  }, { threshold: 0.14, rootMargin: '0px 0px -30px 0px' });
 
-  revealTargets.forEach((item) => observer.observe(item));
+  nodes.forEach((node) => observer.observe(node));
 }
