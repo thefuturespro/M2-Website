@@ -2,18 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>M2 Pressure Pulse</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M2 Pressure Pulse</title>
+  <meta name="description" content="M2 Pressure Pulse helps discretionary traders read market pressure, momentum, and acceleration with clarity." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+<div class="page-bg"></div>
 
-<!-- ================= HEADER ================= -->
 <header class="site-header">
   <div class="header-inner">
-    <div class="logo">
-      <img src="logo.png" alt="M2 Pressure Pulse Logo" />
-    </div>
+    <a class="logo" href="index.html">
+      <img src="logo.png" alt="M2 Pressure Pulse logo" />
+    </a>
 
     <nav class="nav">
       <a href="#methodology">Methodology</a>
@@ -23,142 +27,110 @@
   </div>
 </header>
 
-<!-- ================= HERO ================= -->
-<section class="hero hero-offset">
-  <div class="hero-bg-glow"></div>
+<main>
+  <section class="hero hero-offset">
+    <div class="hero-bg-glow"></div>
+    <div class="hero-inner">
+      <div class="hero-grid">
+        <div class="hero-text reveal">
+          <p class="kicker">Context Over Prediction</p>
+          <h1>
+            Market Pressure.<br />
+            <span>Not Predictions.</span>
+          </h1>
 
-  <div class="hero-inner">
-    <div class="hero-grid">
+          <p class="hero-sub">
+            M2 Pressure Pulse is a professional-grade framework for reading market pressure,
+            momentum, and acceleration across timeframes, built for discretionary traders
+            who execute with context, not bias.
+          </p>
 
-      <div class="hero-text">
-        <h1>
-          Market Pressure.<br />
-          <span>Not Predictions.</span>
-        </h1>
+          <div class="cta">
+            <a href="pricing.html" class="btn primary">Request Access</a>
+            <a href="#methodology" class="btn secondary">View Methodology</a>
+          </div>
+        </div>
 
-        <p class="hero-sub">
-          M2 Pressure Pulse is a professional-grade framework for reading market pressure,
-          momentum, and acceleration across timeframes — built for discretionary traders
-          who execute with context, not bias.
-        </p>
-
-        <div class="cta">
-          <a href="#access" class="btn primary">Request Access</a>
-          <a href="#methodology" class="btn secondary">View Methodology</a>
+        <div class="hero-visual reveal-delay">
+          <div class="visual-frame">
+            <img src="hero.png" alt="M2 Pressure Pulse interface preview" />
+          </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="hero-visual">
-        <div class="visual-frame">
-          <img src="hero.png" alt="M2 Pressure Pulse Visualization" />
+  <section id="methodology" class="section section-dark">
+    <h2>Philosophy</h2>
+    <div class="philosophy-grid">
+      <p>
+        Markets do not move because of opinions, narratives, or indicators.
+        They move because of <strong>pressure</strong>.
+      </p>
+      <p>
+        Trend is a byproduct. Direction is contextual. Entries are discretionary.
+        M2 exposes expansion, absorption, and alignment across timeframes
+        without prediction, automation, or false certainty.
+      </p>
+    </div>
+  </section>
+
+  <section id="components" class="section section-components">
+    <div class="section-header">
+      <h2>Core Components</h2>
+      <p class="section-sub">
+        Each component reveals pressure from a different angle.
+        None of them operate in isolation.
+      </p>
+    </div>
+
+    <div class="component-grid">
+      <article class="card card-component">
+        <div class="card-content">
+          <p class="card-label">01</p>
+          <h3>Heatmap</h3>
+          <p>Visualizes momentum and acceleration across timeframes to expose expansion and absorption zones in real time.</p>
         </div>
-      </div>
+      </article>
 
+      <article class="card card-component">
+        <div class="card-content">
+          <p class="card-label">02</p>
+          <h3>Overlay</h3>
+          <p>Anchors pressure directly to price action, revealing interaction instead of forcing directional prediction.</p>
+        </div>
+      </article>
+
+      <article class="card card-component">
+        <div class="card-content">
+          <p class="card-label">03</p>
+          <h3>Signals</h3>
+          <p>Highlights state transitions rather than entries, drawing attention to change without dictating execution.</p>
+        </div>
+      </article>
+
+      <article class="card card-component">
+        <div class="card-content">
+          <p class="card-label">04</p>
+          <h3>Dashboards</h3>
+          <p>Brings alignment, bias, and execution context together across independent timeframes in one view.</p>
+        </div>
+      </article>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ================= PHILOSOPHY ================= -->
-<section id="methodology" class="section section-dark">
-  <h2>Philosophy</h2>
-
-  <div class="philosophy-grid">
-    <p>
-      Markets do not move because of opinions, narratives, or indicators.
-      They move because of <strong>pressure</strong>.
+  <section id="access" class="section section-accent">
+    <h2>Access</h2>
+    <p class="access-lead">
+      M2 Pressure Pulse is built for experienced traders.
+      Access is intentionally limited.
     </p>
+    <a class="btn primary large" href="pricing.html">Join the Waitlist</a>
+  </section>
+</main>
 
-    <p>
-      Trend is a byproduct. Direction is contextual. Entries are discretionary.
-      M2 exposes expansion, absorption, and alignment across timeframes —
-      without prediction, automation, or false certainty.
-    </p>
-  </div>
-</section>
-
-<!-- ================= COMPONENTS ================= -->
-<section id="components" class="section section-components">
-  <div class="section-header">
-    <h2>Core Components</h2>
-    <p class="section-sub">
-      Each component is designed to reveal pressure from a different angle —
-      none of them operate in isolation.
-    </p>
-  </div>
-
-  <div class="component-grid">
-
-    <div class="card card-component">
-      <div class="card-content">
-        <h4>Heatmap</h4>
-        <p>
-          Visualizes momentum and acceleration across timeframes,
-          exposing expansion and absorption zones in real time.
-        </p>
-      </div>
-      <div class="card-image">
-        <img src="components/heatmap.png" alt="Heatmap Component" />
-      </div>
-    </div>
-
-    <div class="card card-component">
-      <div class="card-content">
-        <h4>Overlay</h4>
-        <p>
-          Anchors pressure directly to price, revealing interaction
-          rather than attempting to predict direction.
-        </p>
-      </div>
-      <div class="card-image">
-        <img src="components/overlay.png" alt="Overlay Component" />
-      </div>
-    </div>
-
-    <div class="card card-component">
-      <div class="card-content">
-        <h4>Signals</h4>
-        <p>
-          State transitions — not entries. Designed to draw attention
-          to change, not dictate execution.
-        </p>
-      </div>
-      <div class="card-image">
-        <img src="components/signals.png" alt="Signals Component" />
-      </div>
-    </div>
-
-    <div class="card card-component">
-      <div class="card-content">
-        <h4>Dashboards</h4>
-        <p>
-          Bias, alignment, and execution context across multiple
-          independent timeframes.
-        </p>
-      </div>
-      <div class="card-image">
-        <img src="components/dashboards.png" alt="Dashboards Component" />
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ================= ACCESS ================= -->
-<section id="access" class="section section-accent">
-  <h2>Access</h2>
-
-  <p class="access-lead">
-    M2 Pressure Pulse is built for experienced traders.
-    Access is intentionally limited.
-  </p>
-
-  <a class="btn primary large">Join the Waitlist</a>
-</section>
-
-<!-- ================= FOOTER ================= -->
 <footer>
-  <p>© M2 Pressure Pulse</p>
+  <p>&copy; M2 Pressure Pulse</p>
 </footer>
-
 </body>
 </html>
