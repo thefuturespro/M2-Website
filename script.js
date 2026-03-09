@@ -1,14 +1,27 @@
-const nodes = document.querySelectorAll('.reveal-up');
+const revealItems = document.querySelectorAll('.reveal');
+const menuToggle = document.getElementById('menuToggle');
+const nav = document.getElementById('siteNav');
 
-if (nodes.length) {
-  const observer = new IntersectionObserver((entries, obs) => {
+if (revealItems.length > 0) {
+  const revealObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
-        obs.unobserve(entry.target);
+        observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.14, rootMargin: '0px 0px -30px 0px' });
+  }, {
+    threshold: 0.14,
+    rootMargin: '0px 0px -30px 0px'
+  });
 
-  nodes.forEach((node) => observer.observe(node));
+  revealItems.forEach((item) => revealObserver.observe(item));
+}
+
+if (menuToggle && nav) {
+  menuToggle.addEventListener('click', () => {
+    const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+    menuToggle.setAttribute('aria-expanded', String(!expanded));
+    nav.classList.toggle('open');
+  });
 }

@@ -3,135 +3,162 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>M2 Pressure Pulse | TradingView Pressure Framework</title>
-  <meta name="description" content="Read pressure, acceleration, and alignment across timeframes with M2 Pressure Pulse." />
+  <title>M2 Indicator | Landing Framework</title>
+  <meta name="description" content="Modern black and red landing framework for a TradingView indicator." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="site-shell">
-    <header class="site-header">
-      <div class="container header-row">
-        <a class="logo" href="index.html">
-          <img src="logo.png" alt="M2 Pressure Pulse" />
-        </a>
-        <nav class="nav">
-          <a href="#overview">Overview</a>
-          <a href="#modules">Modules</a>
-          <a href="pricing.html" class="nav-btn">Access</a>
-        </nav>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav-row">
+      <a class="brand" href="#">
+        <span class="brand-mark"></span>
+        <span class="brand-text">M2 INDICATOR</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+
+      <nav class="nav" id="siteNav">
+        <a href="#overview">Overview</a>
+        <a href="#modules">Modules</a>
+        <a href="#proof">Proof</a>
+        <a href="#cta" class="nav-cta">Get Access</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-copy reveal">
+        <p class="kicker">TradingView Indicator Framework</p>
+        <h1>Blackout design. Precision execution.</h1>
+        <p class="hero-lead">Replace this with your core value proposition. Keep it short, specific, and outcome-driven.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#cta">Primary CTA</a>
+          <a class="btn btn-ghost" href="#modules">Secondary CTA</a>
+        </div>
       </div>
-    </header>
 
-    <main>
-      <section class="hero container">
-        <div class="hero-copy reveal-up">
-          <p class="eyebrow">TradingView Indicator Framework</p>
-          <h1>Read pressure before price tells the story.</h1>
-          <p class="lead">
-            M2 Pressure Pulse gives discretionary traders a clean view of momentum, acceleration,
-            and cross-timeframe alignment without pretending to automate execution.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="pricing.html">Request Access</a>
-            <a class="btn btn-secondary" href="#modules">See Modules</a>
-          </div>
-
-          <div class="hero-stats">
-            <article>
-              <h3>4</h3>
-              <p>Core modules</p>
-            </article>
-            <article>
-              <h3>Multi</h3>
-              <p>Timeframe alignment</p>
-            </article>
-            <article>
-              <h3>0</h3>
-              <p>Predictive claims</p>
-            </article>
-          </div>
+      <div class="hero-panel reveal delay-1">
+        <div class="panel-head">
+          <span>Live Structure</span>
+          <span class="dot"></span>
         </div>
-
-        <div class="hero-media reveal-up delay-1">
-          <div class="hero-frame">
-            <img src="hero.png" alt="M2 Pressure Pulse interface screenshot" />
-          </div>
+        <div class="chart-placeholder">
+          <div class="line line-a"></div>
+          <div class="line line-b"></div>
+          <div class="line line-c"></div>
         </div>
-      </section>
-
-      <section id="overview" class="section container">
-        <div class="section-head">
-          <p class="eyebrow">Overview</p>
-          <h2>Designed for context-driven execution</h2>
-        </div>
-        <div class="feature-grid">
-          <article class="panel reveal-up">
-            <h3>Pressure-first model</h3>
-            <p>Focuses on expansion and absorption behavior that drives directional intent.</p>
-          </article>
-          <article class="panel reveal-up delay-1">
-            <h3>Context over signals</h3>
-            <p>Highlights state shifts and conditions so entries still come from your discretion.</p>
-          </article>
-          <article class="panel reveal-up delay-2">
-            <h3>Execution clarity</h3>
-            <p>Keeps your process consistent across sessions with structure that is easy to read fast.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="modules" class="section container">
-        <div class="section-head split">
+        <div class="panel-foot">
           <div>
-            <p class="eyebrow">Modules</p>
-            <h2>One system, four lenses</h2>
+            <h3>[Metric]</h3>
+            <p>Add KPI</p>
           </div>
-          <p class="muted">Every module tracks a different part of pressure behavior. Combined, they form a complete read.</p>
+          <div>
+            <h3>[Metric]</h3>
+            <p>Add KPI</p>
+          </div>
+          <div>
+            <h3>[Metric]</h3>
+            <p>Add KPI</p>
+          </div>
         </div>
-
-        <div class="module-grid">
-          <article class="module-card reveal-up">
-            <span>01</span>
-            <h3>Heatmap</h3>
-            <p>Maps momentum and acceleration intensity across monitored timeframes.</p>
-          </article>
-          <article class="module-card reveal-up delay-1">
-            <span>02</span>
-            <h3>Overlay</h3>
-            <p>Anchors pressure information directly to price for cleaner chart interpretation.</p>
-          </article>
-          <article class="module-card reveal-up">
-            <span>03</span>
-            <h3>State Signals</h3>
-            <p>Flags regime transitions and inflection, not mechanical buy/sell commands.</p>
-          </article>
-          <article class="module-card reveal-up delay-1">
-            <span>04</span>
-            <h3>Dashboards</h3>
-            <p>Summarizes alignment, directional bias, and tactical conditions in one place.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section container">
-        <div class="cta-block reveal-up">
-          <h2>For traders who want structure without autopilot.</h2>
-          <p>Access is limited to keep the user base focused, experienced, and execution-oriented.</p>
-          <a class="btn btn-primary" href="pricing.html">View Access & Pricing</a>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container footer-row">
-        <p>&copy; M2 Pressure Pulse</p>
-        <a href="pricing.html">Access</a>
       </div>
-    </footer>
-  </div>
+    </section>
+
+    <section id="overview" class="section container">
+      <div class="section-title reveal">
+        <p class="kicker">Overview</p>
+        <h2>Drop your messaging into a clean conversion structure</h2>
+      </div>
+
+      <div class="card-grid three">
+        <article class="card reveal">
+          <h3>Problem</h3>
+          <p>Describe what traders struggle with before finding your indicator.</p>
+        </article>
+        <article class="card reveal delay-1">
+          <h3>Method</h3>
+          <p>Describe your framework in plain language. Avoid jargon-heavy copy.</p>
+        </article>
+        <article class="card reveal delay-2">
+          <h3>Outcome</h3>
+          <p>Describe what changes in execution when your tool is used correctly.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="modules" class="section container">
+      <div class="section-title split reveal">
+        <div>
+          <p class="kicker">Modules</p>
+          <h2>Four blocks ready for your indicator components</h2>
+        </div>
+        <p class="muted">Replace each title and paragraph with your actual module names and purpose.</p>
+      </div>
+
+      <div class="card-grid two">
+        <article class="module-card reveal">
+          <span>01</span>
+          <h3>Module Name</h3>
+          <p>Add component summary here.</p>
+        </article>
+        <article class="module-card reveal delay-1">
+          <span>02</span>
+          <h3>Module Name</h3>
+          <p>Add component summary here.</p>
+        </article>
+        <article class="module-card reveal">
+          <span>03</span>
+          <h3>Module Name</h3>
+          <p>Add component summary here.</p>
+        </article>
+        <article class="module-card reveal delay-1">
+          <span>04</span>
+          <h3>Module Name</h3>
+          <p>Add component summary here.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="proof" class="section container">
+      <div class="section-title reveal">
+        <p class="kicker">Proof / Credibility</p>
+        <h2>Space for testimonials, screenshots, or performance notes</h2>
+      </div>
+
+      <div class="proof-grid">
+        <article class="proof-card reveal">
+          <h3>Screenshot Slot</h3>
+          <p>Add image or chart snapshot here.</p>
+        </article>
+        <article class="proof-card reveal delay-1">
+          <h3>Testimonial Slot</h3>
+          <p>Add short quote or user result here.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="cta" class="section container">
+      <div class="cta-block reveal">
+        <h2>Final conversion section</h2>
+        <p>Replace this with your closing offer, scarcity, and call-to-action.</p>
+        <a class="btn btn-primary" href="#">Apply / Join Waitlist</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>&copy; M2 Indicator</p>
+      <a href="#">Privacy</a>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
